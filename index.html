@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>antonosterblad</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome-animation.min.css">
+    <link href="css/style.css" rel="stylesheet">
+
+    <script src="js/jquery-3.1.1.slim.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+
+    <script>
+        $(function () {
+            var $grid = $('.grid').imagesLoaded(function () {
+                // init Masonry after all images have loaded
+                $grid.masonry({
+                    itemSelector: '.grid-item'
+                });
+            });
+        });
+    </script>
+</head>
+
+
+<!-- Header -->
+<header>
+    <div class="container header">
+        <div class="row">
+            <div class="col-md-8">
+                <h1 class="align-left">antonosterblad</h1>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-icons">
+                    <a href="https://drive.google.com/open?id=0B-Fw82gLgXRVNklmMlEwUDg5RXM">
+                        <i class="fa fa-file-text-o fa-2x faa-fast faa-tada animated-hover "></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/antonosterblad">
+                        <i class="fa fa-linkedin fa-2x faa-fast faa-tada animated-hover "></i>
+                    </a>
+                    <a href="https://github.com/antonosterblad">
+                        <i class="fa fa-github fa-2x faa-fast faa-tada animated-hover "></i>
+                    </a>
+                    <a href="https://www.facebook.com/anton.osterblad">
+                        <i class="fa fa-facebook fa-2x faa-fast faa-tada animated-hover "></i>
+                    </a>
+                    <a href="mailto:anton.osterblad@gmail.com">
+                        <i class="fa fa-envelope fa-2x faa-fast faa-tada animated-hover "></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Grid Content -->
+<div class="portfolio">
+    <div class="container">
+        <div class="row">
+            <div class="grid">
+
+                <div class="grid-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/pTzU9L-jnaE"
+                                allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item-text">
+                        <h2>Rainbone</h2>
+                        <p>Rainbone is a voice-controlled co-op game developed for dome theaters.
+                            It's an interactive and immersive experience that engages the entire audience.
+                            The game was nominated in the category "Next Audience Magnet" at
+                            <a href="http://www.cawards.se/">C Awards 2016</a>.</p>
+                        <p class="tags">Game/UX/Audio/C++/OpenGL/Cross-platform</p>
+                        <a href="https://github.com/antonosterblad/Rainbone">
+                            <strong>Open source on GitHub</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="img/karlskronasok.jpg" class="grid-item-image">
+                    <div class="grid-item-text">
+                        <h2>Karlskrona SOK</h2>
+                        <p>I was responsible for designing a brand identity for Karlskrona SOK. This included
+                            <a href="https://drive.google.com/file/d/0Bwrq8BNpnOb6MnJTQWlRWG5DZWs/view">brand
+                                guideline</a>,
+                            logotype and clothing. And everything had to be done on a two week deadline, during
+                            my spare time. I am currently also working on redesigning their homepage.</p>
+                        <p class="tags">Design/Web/Management</p>
+                        <a href="http://idrottonline.se/KarlskronaSOK/">
+                            <strong>Homepage Karlskrona SOK</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="img/trygga.jpg" class="grid-item-image">
+                    <div class="grid-item-text">
+                        <h2>Trygga</h2>
+                        <p>Trygga is a system for a smart panic alarm in the category of Internet of Things.
+                            The concept was developed during the hackathon <a
+                                    href="http://eastswedenhack.se/esh15/prisutdelning-2015">East Sweden Hack 2015</a>
+                            and my team was awarded with the price for the best project.</p>
+                        <p class="tags">IoT/UX/Development/Mangagement</p>
+                        <a href="http://mail12140.wixsite.com/trygga">
+                            <strong>Presentation of Trygga</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/aMqjUe7OPVU" allowfullscreen></iframe>
+                    </div>
+                    <div class="grid-item-text">
+                        <h2>IKEAswipe</h2>
+                        <p class="notes">IKEAswipe is a digital assembly instruction with augmented reality. Built
+                            as an Android application in the course TNM082, Agile usability development for handheld
+                            devices, at Linköping University.</p>
+                        <p class="tags">Android/AR/UX</p>
+                        <a href="https://github.com/antonosterblad/IKEAswipe">
+                            <strong>Open source on GitHub</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="img/mcrt.jpg" class="grid-item-image">
+                    <div class="grid-item-text">
+                        <h2>Monte Carlo Ray Tracer</h2>
+                        <p>A global illumination renderer based on the Monte Carlo method. Monte Carlo ray tracing is a
+                            method in the field of
+                            realistic image synthesis for generating images with the help of a computer.
+                            The project was part of the course TNCG15, Advanced Global Illumination and Rendering, at
+                            Linköping
+                            University.</p>
+                        <p class="tags">ComputerGraphics/C++/GLM</p>
+                        <a href="https://github.com/Cigg/Monte-Carlo-Ray-Tracing">
+                            <strong>Open source on GitHub</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="img/larm.jpg" class="grid-item-image">
+                    <div class="grid-item-text">
+                        <h2>LARM</h2>
+                        <p>As a Group IT Manager for LARM 2015 I was Head of Mobile Development. The development
+                            included
+                            both iOS and Android. LARM is a career fair for engineers, scientists and graduate students
+                            at the Institute of
+                            Technology at Linköping University. The mobile applications gathers all the important
+                            information about the exhibition
+                            and serves as a digital exhibition catalog.</p>
+                        <p class="tags">Android/iOS/UI/Management</p>
+                        <a href="http://international.lintek.liu.se/future/larm/">
+                            <strong>More about LARM</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="img/nameviz.png" class="grid-item-image">
+                    <div class="grid-item-text">
+                        <h2>Name Trends Visualisation</h2>
+                        <p>An interactive visualisation of name trends for Swedish babies born between 2005 and 2014.
+                            The project was part of the course TNM048, Information Visualisation, at Linköping
+                            University.</p>
+                        <p class="tags">Web/D3.js/InfoVis/UX</p>
+                        <a href="https://github.com/antonosterblad/InfoNameVis">
+                            <strong>Open source on GitHub</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="img/qr-code-reader.png" class="grid-item-image">
+                    <div class="grid-item-text">
+                        <h2>QR Code Reader</h2>
+                        <p>A QR code reader developed in MATLAB. The program can detect and extract a QR code from
+                            images of various quality. The project was part of the course TNM034, Advanced Image
+                            Processing,
+                            at Linköping University</p>
+                        <p class="tags">ImageProcessing/MATLAB</p>
+                        <a href="https://github.com/teodorvik/QR-code-processing">
+                            <strong>Open source on GitHub</strong>
+                        </a>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <img src="img/sph.png" class="grid-item-image">
+                    <div class="grid-item-text">
+                        <h2>Smoothed Particle Hydrodynamics</h2>
+                        <p>A fluid simulation based on the technique smoothed particle hydrodynamics. The project was
+                            part of the course TNM085, Modeling Project, at Linköping University.</p>
+                        <p class="tags">ComputerGraphics/C++/OpenGL/Cross-platform</p>
+                        <a href="https://github.com/oscarwestberg/Smoothed-Particle-Hydrodynamics-in-Zero-Gravity">
+                            <strong>Open source on GitHub</strong>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>
